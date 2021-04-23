@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN git clone --depth 1 https://github.com/HydraWiki/mediawiki-embedvideo.git /var/www/html/extensions/EmbedVideo
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-PluggableAuth.git /var/www/html/extensions/PluggableAuth
-RUN git clone --depth 1  https://github.com/wikimedia/mediawiki-extensions-OpenIDConnect.git /var/www/html/extensions/OpenIDConnect
+RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-OpenIDConnect.git /var/www/html/extensions/OpenIDConnect
+RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-PluggableAuth.git /var/www/html/extensions/PluggableAuth
 
 COPY composer.local.json /var/www/html/composer.local.json
 RUN curl -L https://getcomposer.org/installer | php \
