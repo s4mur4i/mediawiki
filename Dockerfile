@@ -22,6 +22,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN git clone --depth 1 https://github.com/HydraWiki/mediawiki-embedvideo.git /var/www/html/extensions/EmbedVideo
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-PluggableAuth.git /var/www/html/extensions/PluggableAuth
 RUN git clone --depth 1 https://github.com/s4mur4i/mediawiki-extensions-OpenIDConnect.git /var/www/html/extensions/OpenIDConnect
+RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-Lockdown.git /var/www/html/extensions/Lockdown
+RUN git clone --depth 1 https://github.com/bharley/mw-markdown.git /var/www/html/extensions/Markdown
+RUN curl https://raw.githubusercontent.com/erusev/parsedown/master/Parsedown.php --output /var/www/html/extensions/Markdown/Parsedown.php
+RUN curl https://raw.githubusercontent.com/erusev/parsedown-extra/master/ParsedownExtra.php --output /var/www/html/extensions/Markdown/ParsedownExtra.php
 
 COPY composer.local.json /var/www/html/composer.local.json
 RUN curl -L https://getcomposer.org/installer | php \
