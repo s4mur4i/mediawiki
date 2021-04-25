@@ -23,14 +23,8 @@ RUN git clone --depth 1 https://github.com/HydraWiki/mediawiki-embedvideo.git /v
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-PluggableAuth.git /var/www/html/extensions/PluggableAuth
 RUN git clone --depth 1 https://github.com/s4mur4i/mediawiki-extensions-OpenIDConnect.git /var/www/html/extensions/OpenIDConnect
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-Lockdown.git /var/www/html/extensions/Lockdown
-RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-Lockdown.git /var/www/html/extensions/Lockdown
-RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-Interwiki.git /var/www/html/extensions/Interwiki
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-UserMerge.git /var/www/html/extensions/UserMerge
-RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-WikiEditor.git /var/www/html/extensions/WikiEditor
-RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-Cite.git /var/www/html/extensions/Cite
-RUN git clone --depth 1 https://gitlab.com/hydrawiki/extensions/EmbedVideo.git /var/www/html/extensions/EmbedVideo
 RUN git clone --depth 1 https://github.com/jmnote/SimpleMathJax.git /var/www/html/extensions/SimpleMathJax
-RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-ParserFunctions.git /var/www/html/extensions/ParserFunctions
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-CollapsibleVector.git /var/www/html/extensions/CollapsibleVector
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-PageNotice.git /var/www/html/extensions/PageNotice
 
