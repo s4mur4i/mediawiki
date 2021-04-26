@@ -27,7 +27,7 @@ RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-UserMe
 RUN git clone --depth 1 https://github.com/jmnote/SimpleMathJax.git /var/www/html/extensions/SimpleMathJax
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-CollapsibleVector.git /var/www/html/extensions/CollapsibleVector
 RUN git clone --depth 1 https://github.com/wikimedia/mediawiki-extensions-PageNotice.git /var/www/html/extensions/PageNotice
-RUN git clone --depth 1 https://github.com/Killarnee/DarkCosmos.git /var/www/html/skins/DarkCosmos
+RUN git clone --depth 1 https://github.com/Killarnee/DarkCosmos.git /tmp/DarkCosmos && mv /tmp/DarkCosmos/DarkCosmos /var/www/html/skins/
 
 COPY composer.local.json /var/www/html/composer.local.json
 RUN curl -L https://getcomposer.org/installer | php \
