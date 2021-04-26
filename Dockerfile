@@ -13,8 +13,6 @@ RUN  apt-get clean && apt-get update && apt-get install -y --no-install-recommen
         imagemagick \
         unzip \
         vim.tiny \
-        redis-server \
-        php-redis \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt/archives/* \
     && ln -s /usr/lib/x86_64-linux-gnu/libldap.so /usr/lib/libldap.so \
